@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <link rel="stylesheet" href="style.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FILMOGRAPHIE KEVEN</title>
+
+        <form action="traitement.php" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" class="form-input" required>
+
+            <label for "email">Email :</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+
+            <label for "pseudo">Pseudo :</label>
+            <input type="text" id="pseudo" name="pseudo" class="form-input" required>
+
+            
+        <div class="plateform-section"
+
+            <p>Votre plateforme préférée ?</p>
+            
+            <input type="checkbox" id="PS5" name="plateforme []" value="PS5" class="form-input" required>
+            <label for="PS5">PS5</label> 
+            
+            <input type="checkbox" id="XBOX One" name="plateforme []" value="XBOX One" class="form-input" required>
+            <label for="XBOX one">XBOX one</label>
+            
+            <input type="checkbox" id="Nintendo Switch" name="plateforme []" value="Nintendot Switch" class="form-input" required>
+            <label for="Nintendo Switch">Nintendo Switch</label>
+
+            <input type="checkbox" id="PC" name="plateforme []" value="PC" class="form-input" required>
+            <label for="PC">PC</label>
+        </div>
+
+
+            <input type="Submit" value="Envoyer">
+        </form>
+    </head>
+    <body>
+        <h1>Filmographie de Keven</h1>
+        <p>TEST</p>
+        <ul>
+            <Li>Film 1</Li>
+            <Li>Film 2</Li>
+            <Li>Film 3</Li>
+            <Li>Film 4</Li>
+            <Li>Film 5</Li>
+        </ul>
+        <a href="https://www.allocine.fr/">
+            <br>
+        <img src="/Users/kevenmaung/Sites/images.jpeg" alt="Texte alternatif pour l'image">
+        </a>
+
+        <h1>Jeux videos de Keven</h1>
+        <p>TEST</p>
+        <ul>
+            <Li>Jeux 1</Li>
+            <Li>Jeux 2</Li>
+            <Li>Jeux 3</Li>
+            <Li>Jeux 4</Li>
+            <Li>Jeux 5</Li>
+        </ul>
+        <a href="https://store.playstation.com/fr-fr/pages/latest">
+            <br>
+        <img src="data:image/jpeg;base64,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" alt="Texte alternatif pour l'image">
+        </a>
+        
+        <table border="1">
+            <tr>
+                <th>Nom</th>
+                <th>Plateforme</th>
+                <th>Avis</th>
+                <th>Lien</th>
+            </tr>
+            <tr>
+                <td>Zelda Breath Of the Wild</td>
+                <td>Nintendo Switch</td>
+                <td><a href="https://www.metacritic.com/game/the-legend-of-zelda-breath-of-the-wild/">Score MetaCritic</a></td>
+                <td><a href="https://www.nintendo.com/fr-fr/Jeux/Jeux-Nintendo-Switch/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html">Lien</a> </td>
+            </tr>
+            <tr>
+                <td>Cyberpunk 2077</td>
+                <td>Playstation 5</td>
+                <td><a href="https://www.metacritic.com/game/cyberpunk-2077/">Score MetaCritic</a></td>
+                <td><a href="https://store.playstation.com/fr-fr/product/EP4497-PPSA04029_00-0000000000000N22">Lien</a></td>
+            </tr>
+        </table>
+    
+    </body>
+</html>
