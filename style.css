@@ -2,39 +2,48 @@
     width: 20%;
     margin: 10px;
     text-align: justify;
-
 }
-.plateform-section{
-    display:flex;
-    flex-direction: column;
+
+.plateform-section {
+    display: grid; /* Utilisation de Grid */
+    grid-template-columns: auto 1fr; /* Deux colonnes : une pour les cases et une pour les labels */
+    gap: 8px; /* Espacement entre les éléments */
     margin-top: 20px;
     margin-bottom: 20px;
-
+    width:auto;
+    max-width: 350px;
     border: 3px solid rgb(249, 221, 170);
     border-radius: 10px;
+    padding: 10px;
 }
 
-
-.plateform-section input[type="checkbox"]{
+.plateform-section input[type="checkbox"] {
     margin-right: 5px;
-    vertical-align: middle;
-    gap: 5px;
+    width: auto; /* Ne pas étirer les cases */
+    display: inline-block; /* Pour que les cases ne prennent que la place nécessaire */
 }
 
+.plateform-section label {
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1.2; /* Ajuste l'espacement vertical */
+    margin-bottom: 5px; /* Espacement sous les labels */
+    align-self:center; /* Aligne verticalement les labels au centre */
+    margin-left: 2px;
+}
 
-p{
+p {
     color: blue;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
-h1{
-    color:red;
+h1 {
+    color: red;
     text-align: center;
     background-color: black;
     font-weight: bold;
-
     border: 3px solid rgb(249, 221, 170);
     border-radius: 10px;
 }
@@ -44,11 +53,4 @@ body {
     background-image: url("image.jpg");
     background-size: cover;
     background-position: center;
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;  /* Centre horizontalement */
-    align-items: center;      /* Centre verticalement */
-    gap: 20px;                /* Espacement entre les éléments */
-  }
+}
